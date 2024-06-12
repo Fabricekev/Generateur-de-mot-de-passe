@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>generateur de mot de passe</title>
+</head>
+<body>
+    <div class="form">
+        <h1>Generateur de mot de passe</h1>
+        <form action="">
+            <label for="lenght">Longueur du mot de passe</label>
+            <input type="number" id="lenght" name="lenght"> <br>
+            <label for="includes-numbers">Inclure des nombres</label>
+            <input type="checkbox" id="includes-numbers" name="includes-numbers" class="checkbox"><br>
+            <label for="includes-symbols">Inclure des symbols</label>
+            <input type="checkbox" id="includes-symbols" name="includes-symbols" class="checkbox"> <br>
+            <button type="button" onclick="generatePassword()">Generer mot de passe</button>
+        </form>
+        <div id="password"></div>
+        
+    </div>
+    
+</body>
+</html>
